@@ -4,32 +4,31 @@ Este é um aplicativo Flutter desenvolvido como parte do **Bootcamp Santander - 
 
 ## ✨ Funcionalidades
 
-- Preenchimento de formulário com nome, idade, peso e altura
-- Validação de campos
-- Cálculo automático do IMC
-- Classificação com base no valor do IMC
-- Tela de resultado com mensagem personalizada
-- Histórico de resultados com possibilidade de exclusão
+- Preenchimento de formulário com nome, idade, peso e altura  
+- Validação de campos  
+- Cálculo automático do IMC  
+- Classificação com base no valor do IMC  
+- Tela de resultado com mensagem personalizada  
+- Histórico de resultados com possibilidade de exclusão  
 
 ## 💡 Tecnologias utilizadas
 
-- Flutter
-- Dart
-- Widgets básicos: `TextField`, `ListView`, `Column`, `Row`, `ElevatedButton`, `Card`, `SnackBar`
+- Flutter  
+- Dart  
+- Widgets básicos: `TextField`, `ListView`, `Column`, `Row`, `ElevatedButton`, `Card`, `SnackBar`  
 - Gerenciamento de estado com `StatefulWidget`
 
 ## 📷 Capturas de tela
 
 <p float="left">
-  <img src="assets/images/home_formulario.jpg" width="300" />
-  <img src="assets/images/Resultado_page.jpg" width="300" />
-  <img src="assets/images/Historico.jpg" width="300" />
+  <img src="assets/images/home_formulario.jpg" width="200" />
+  <img src="assets/images/Resultado_page.jpg" width="200" />
+  <img src="assets/images/Historico.jpg" width="200" />
 </p>
 
+## 🧪 Estrutura do projeto
 
-🧪 Estrutura do projeto
-
-
+```plaintext
 lib/
 ├── models/           # Modelos de dados como IMC e Resultado
 ├── pages/            # Telas como Home e Resultado
@@ -49,4 +48,5 @@ Navegação entre telas
 Manutenção de histórico e gerenciamento de estado
 
 👨‍💻 Autor
+
 Jefferson Adão - @Jeffersonadao
