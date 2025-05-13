@@ -29,13 +29,11 @@ Este é um aplicativo Flutter desenvolvido como parte do **Bootcamp Santander - 
 
 🧪 Estrutura do projeto
 
-graphql
-Copiar
-Editar
+
 lib/
 ├── models/           # Modelos de dados como IMC e Resultado
-├── pages/            # Telas como Formulário e Resultado
-├── widgets/          # Componentes reutilizáveis como o logo
+├── pages/            # Telas como Home e Resultado
+├── widgets/          # Componentes reutilizáveis como o Imagem
 ├── main.dart         # Arquivo principal
 
 📚 Aprendizados
