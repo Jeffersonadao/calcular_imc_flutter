@@ -9,7 +9,7 @@ Este é um aplicativo Flutter desenvolvido como parte do **Bootcamp Santander - 
 - Cálculo automático do IMC
 - Classificação com base no valor do IMC
 - Tela de resultado com mensagem personalizada
-- Histórico de resultados com possibilidade de exclusão com confirmação
+- Histórico de resultados com possibilidade de exclusão
 
 ## 💡 Tecnologias utilizadas
 
