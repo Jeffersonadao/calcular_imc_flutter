@@ -3,6 +3,7 @@ import 'package:calcular_imc/models/imc_resultado.dart';
 import 'package:calcular_imc/pages/resultado.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:hive/hive.dart';
 
 class Formulario extends StatefulWidget {
   final void Function(ImcResultado) onCalculoFinalizado;
@@ -64,7 +65,7 @@ class _FormularioState extends State<Formulario> {
             ),
             SizedBox(height: 15),
             ElevatedButton(
-              onPressed: () {
+              onPressed: () async {
                 final nome = nomeController.text.trim();
                 final alturaTxt = alturaController.text.trim();
                 final pesoTxt = pesoController.text.trim();
@@ -122,6 +123,9 @@ class _FormularioState extends State<Formulario> {
                   valor: imc.calcular,
                   classificacao: imc.classificacao()['classificacao']!,
                 );
+
+                final box = Hive.box<ImcResultado>('historico_imc');
+                await box.add(resultado);
 
                 widget.onCalculoFinalizado(resultado);
 

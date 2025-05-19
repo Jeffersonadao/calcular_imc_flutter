@@ -1,7 +1,24 @@
-import 'package:calcular_imc/pages/home.dart';
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:path_provider/path_provider.dart';
 
-void main() {
+import 'models/imc_resultado.dart';
+import 'pages/home.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  
+  final dir = await getApplicationDocumentsDirectory();
+  await Hive.initFlutter(dir.path);
+
+  
+  Hive.registerAdapter(ImcResultadoAdapter());
+
+  
+  await Hive.openBox<ImcResultado>('historico_imc');
+
   runApp(const MyApp());
 }
 
