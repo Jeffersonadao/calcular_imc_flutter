@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import '../models/imc_resultado.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import '../models/imc_resultado.dart';
 
 class HistoricoPage extends StatelessWidget {
-  const HistoricoPage({Key? key, required List<ImcResultado> historico}) : super(key: key);
+  const HistoricoPage({Key? key, required List<ImcResultado> historico})
+    : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final box = Hive.box<ImcResultado>('historico_imc');
-
 
     return ValueListenableBuilder(
       valueListenable: box.listenable(),
